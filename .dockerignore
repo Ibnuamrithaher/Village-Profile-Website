@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.dockerignore
+README.md
+Dockerfile
+*.log
+.vscode
+.gemini
+.agent
+.agents
+brain
+tmp
+node_modules

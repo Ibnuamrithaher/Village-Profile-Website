@@ -18,6 +18,11 @@ Website profil desa yang modern, interaktif, dan premium untuk **Desa Petung**, 
 - **Lucide React** - Set ikon yang konsisten dan modern.
 - **React Router Dom** - Sistem navigasi antar halaman.
 
+## 📋 Prasyarat (Prerequisites)
+Sebelum menjalankan proyek ini, pastikan Anda telah menginstal:
+- **Node.js**: Versi 20.x atau lebih baru.
+- **npm**: Versi 9.x atau lebih baru.
+
 ## 🛠️ Cara Menjalankan Project
 
 ### 1. Kloning Repositori
@@ -39,6 +44,33 @@ npm run dev
 ### 4. Build untuk Produksi
 ```bash
 npm run build
+```
+
+## 🐳 Menjalankan dengan Docker
+
+Jika Anda ingin menjalankan aplikasi di dalam kontainer:
+
+### 1. Build Image Docker
+dari root direktori proyek, jalankan:
+```bash
+docker build -t desa-petung-profile .
+```
+
+### 2. Jalankan Kontainer
+```bash
+docker run -p 8080:80 desa-petung-profile
+```
+
+Setelah itu, aplikasi dapat diakses melalui `http://localhost:8080`.
+
+### ⚡ Menggunakan Docker Compose (Lebih Mudah)
+Jika Anda ingin cara yang lebih praktis, cukup jalankan:
+```bash
+docker-compose up -d --build
+```
+Aplikasi akan langsung berjalan di latar belakang pada `http://localhost:8080`. Untuk menghentikannya:
+```bash
+docker-compose down
 ```
 
 ## 📂 Struktur Folder
